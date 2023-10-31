@@ -6,16 +6,43 @@
 #pagina{
     width: 100%;
     height: 100vh;
-    background-color: rgb(161, 218, 221);
     display: flex;
     justify-content: center;
+   flex-wrap: wrap;
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(168, 156, 148);
+    padding: 10px 0px;
+    
+}
+
+
+#bannerCabecalho{
+    width: 60px;
+    height: 60px;   
+}
+
+#bannerCabecalho img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
 }
 
 main{
     width: 70%;
-    height: 600px;
+    height: 500px;
     background-color: white;
     border-radius: 10px;
     box-shadow: gray 6px 6px;
@@ -61,4 +88,30 @@ input{
     border-radius: 5px;
     padding: 5px;
     transition: 1s;
+}
+
+input:hover{
+    background-color: rgb(179, 174, 174);
+    transition: 0.3s;
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(167, 161, 161);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+button:hover{
+    width: 250px;
+    height: 35px;
+    background-color: gray;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+footer{
+    width: 100%;
+    background-color: brown;
 }

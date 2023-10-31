@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confeitaria Hora Feliz</title>
-    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="../style/geral.css">
     <link rel="shortcut icon" href="../images/bolo_.jpg" type="image/x-icon">
 </head>
 <body>
@@ -17,25 +17,27 @@
             <h1> Confeitaria Hora Feliz</h1>
         </header>
         <main>
-            <div id="banner"></div>
+            <div id="banner">
+            </div>
             <div id="formulario">
-                <h2>Login</h2>
-                <form action="../pages/cadastro.html" method="post">
+                <h2>Cadastro</h2>
+                <form action="#" method="post">
                     <label for="nome">Digite o nome de usuário</label>
                     <input type="text" id="nome" placeholder="Nome de usuário">
 
-                    <label for="senha">Digite a sua senha</label>
-                    <input type="password" id="senha" placeholder="Digite sua senha">
+                    <label for="email">Digite o seu email</label>
+                    <input type="email" id="email" placeholder="Endereço de E-mail">
 
-                    <button type="submit"> <a href="../style/index.html">ENTRAR</a></button>
-                    <button type="submit"> <a href="../pages/senha.html">ESQUECI MINHA SENHA</a></button>
-                    <button type="submit"> <a href="../pages/cadastro.html">CADASTRAR</a></button>
+                    <label for="senha">Digite a sua senha</label>
+                    <input type="password" id="senha" placeholder="Sua melhor senha">
+
+                    <label for="repitaSenha">Digite a sua senha</label>
+                    <input type="password" id="retitaSenha" placeholder="Digite a senha novamente">
+
+                    <button type="submit">CADASTRAR</button>
                 </form>
             </div>
         </main>
-        <footer>
-            <!-- <p>Todos os direitos reservado a @Nildete</p> -->
-        </footer>
     </div>
 </body>
 </html>
