@@ -10,25 +10,29 @@
 </head>
 <body>
     <div id="pagina">
-        <header>
-            <h1>Confeitaria Hora Feliz</h1>
-            <nav id="menuPc">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                </ul>
-            </nav>
-        </header>
         <main>
             <div id="banner">
-                 <!-- <img src="../images/bolo_banner.jpg" alt=""> -->
+                <!-- <div id="efeito"></div> -->
             </div>
-            <div id="cadastro">
+            <div id="formulario">
+                <h2>CADASTRO</h2>
+                <form action="#" method="post">
+                    <label for="nome">Digite o nome de usuário</label>
+                    <input type="text" id="nome" placeholder="Nome de usuário">
 
+                    <label for="email">Digite o seu email</label>
+                    <input type="email" id="email" placeholder="Endereço de E-mail">
+
+                    <label for="senha">Digite a sua senha</label>
+                    <input type="password" id="senha" placeholder="Sua melhor senha">
+
+                    <label for="repitaSenha">Digite a sua senha</label>
+                    <input type="password" id="retitaSenha" placeholder="Digite a senha novamente">
+
+                    <button type="submit">CADASTRAR</button>
+                </form>
             </div>
         </main>
-        <footer></footer>
     </div>
 </body>
 </html>

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 *{
     margin: 0%;
     padding: 0%;
@@ -8,75 +6,59 @@
 #pagina{
     width: 100%;
     height: 100vh;
+    background-color: rgb(161, 218, 221);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
-
-/* Cabeçalho */
-
-header{
-    width: 100%;
-    background-color: bisque;
-    align-items: center;
-    justify-content: center;
-}
-
-h1{
-    font-size: 14pt;
-    color: brown;
-}
-
-nav{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-li a{
-    text-decoration: none;
-    color: brown;
-}
-
-/* Fim cabeçalho*/
-
-/* Main*/
 
 main{
     width: 70%;
-    height:600px ;
-
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: gray 6px 6px;
+    display: flex;
+    overflow: hidden;
 }
 
-#banner, #cadastro{
+#banner, #formulario{
     width: 50%;
-    height:100%;
-
+    height: 100%;
 }
-
-/*
-#banner{
-    background-image: url(../images/bannerTech.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    */
 
 #banner{
     background-image: url(../images/bolo_banner.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#cadastro{
-    background-color: aquamarine;
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+h2{
+    color: darkslategrey;
+    margin: 20px 0px;
+}
 
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16pt;
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s;
+}
