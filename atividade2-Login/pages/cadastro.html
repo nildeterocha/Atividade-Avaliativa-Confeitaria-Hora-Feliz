@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confeitaria Hora Feliz</title>
     <link rel="stylesheet" href="../style/geral.css">
+    <link rel="stylesheet" href="../style/@Media.css" media="screen and (max-width: 768px)">
     <link rel="shortcut icon" href="../images/bolo_.jpg" type="image/x-icon">
 </head>
 <body>
@@ -14,8 +15,30 @@
             <div id="bannerCabecalho">
                 <img src="../images/bolo_cabecalho.jpg" alt="">
             </div>
-            <h1> Confeitaria Hora Feliz</h1>
+            <h2> Confeitaria Hora Feliz</h2>
+
+            <nav id="menuPc">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div id="menuIcon" onclick="abrirMenu()">
+                <img class="imagem" src="../images/menuIcon.svg" alt="">
+            </div>
+
         </header>
+
+        <nav id="menuMobile">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+
         <main>
             <div id="banner">
             </div>
@@ -38,6 +61,20 @@
                 </form>
             </div>
         </main>
+        <footer>
+            <p>Todos os direitos reservado a @Nildete</p>
+        </footer>
     </div>
+
+    <script>
+        function abrirMenu(){
+            if(menuMobile.style.display == "none"){
+                menuMobile.style.display = "flex";
+            }else{
+                menuMobile.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>

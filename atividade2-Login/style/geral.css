@@ -8,20 +8,50 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
+/* Inicio cabeçalho*/
 header{
     width: 100%;
-    height: 40px;
+    height: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: rgb(168, 156, 148);
     padding: 10px 0px;
     
 }
 
+nav{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: rgb(77, 75, 75);
+
+}
+
+#menuIcon{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none;
+}
+
+#menuMobile{
+    display: none;
+}
 
 #bannerCabecalho{
     width: 60px;
@@ -35,17 +65,20 @@ header{
     justify-content: center;
 }
 
-h1{
+h2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    color: gray;
 }
 
+/* Fim cabeçalho*/
+
+/* Inicio main */
 main{
-    width: 70%;
-    height: 500px;
+    width: 75%;
+    height: 600px;
     background-color: white;
     border-radius: 10px;
-    box-shadow: gray 6px 6px;
+    box-shadow: rgb(160, 156, 156) 6px 6px;
     display: flex;
     overflow: hidden;
 }
@@ -67,6 +100,7 @@ main{
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: rgb(187, 184, 183);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -79,18 +113,21 @@ form{
     display: flex;
     flex-direction: column;
     gap: 8px;
-    font-size: 16pt;
+    font-size: 12pt;
+    color: rgb(77, 75, 75);
 }
 
 input{
-    width: 350px;
-    height: 30px;
+    width: 300px;
+    height: 40px;
     border-radius: 5px;
     padding: 5px;
     transition: 1s;
 }
 
 input:hover{
+    width: 350px;
+    height: 40px;
     background-color: rgb(179, 174, 174);
     transition: 0.3s;
 }
@@ -103,6 +140,10 @@ button{
     border-radius: 5px;
 }
 
+button a{
+    color: rgb(77, 75, 75);
+}
+
 button:hover{
     width: 250px;
     height: 35px;
@@ -111,7 +152,15 @@ button:hover{
     transition: 0.5s;
 }
 
+/* Fim main*/
+
 footer{
     width: 100%;
-    background-color: brown;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(168, 156, 148);
+    color: rgb(77, 75, 75);
+
 }
