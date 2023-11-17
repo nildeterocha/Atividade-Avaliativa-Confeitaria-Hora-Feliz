@@ -10,7 +10,11 @@
 
 }
 
-header{
+body{
+    background-color: var(--cinzaMaisClaro);
+}
+
+header, footer{
     background-color: var(--marfimMedio);
 }
 
@@ -23,4 +27,12 @@ header{
 
 .nav-link{
     color: var(--verdeEscuro)!important;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
