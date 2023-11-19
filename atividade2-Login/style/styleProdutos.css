@@ -14,11 +14,6 @@ header{
     background-color: var(--cinzaClaro);
 }
 
-body{
-    background-color: var(--cinzaMaisClaro);
-}
-
-
 .navbar img{
     width: auto;
     height: 150px;
@@ -29,18 +24,4 @@ body{
     display: flex;
     align-items: center;
     font-size: 25pt;
-}
-
-#sobreNos{
-    background-color: var(--marfimClaro);
-}
-
-footer{
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--marfimMedio);
-
 }
