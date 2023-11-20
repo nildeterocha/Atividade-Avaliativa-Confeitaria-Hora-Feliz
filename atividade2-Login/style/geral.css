@@ -23,6 +23,11 @@ header{
     
 }
 
+header h2{
+    color: rgb(77, 75, 75);
+}
+
+
 nav{
     height: 20%;
     display: flex;
