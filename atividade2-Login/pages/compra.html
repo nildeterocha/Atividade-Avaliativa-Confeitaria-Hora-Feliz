@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confeitaria Hora Feliz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/styleHome.css">
+    <link rel="stylesheet" href="../style/styleProdutos.css">
+    <link rel="shortcut icon" href="../images/bolo_.jpg" type="image/x-icon">
+</head>
+<body>
+    <div id="pagina" class="container-fluid m-0 p-0 vh-100">
+        <header>
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="../images/boloLimao1.png" alt="Logo" width="30" height="30" class="d-flex align-text-center">
+                   <h2 style="color: var(--cinzaEscuro);"> Confeitaria Hora Feliz</h2>
+                  </a>
+                </div>
+              </nav>
+        </header>
+
+        <main>
+            <section id="introSection" style="color: var(--verdeEscuro);" class="container-fluid mx-0 my-2 p-0 text-center">
+                <h3 class="my-3">Escolha seus proutos!!</h3>
+                <div class="container mx-auto my-3 row w-100 d-flex justify-content-center">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#boloLaranjaModal">
+                        <div class="text-black card p-2" style="width: 16rem; background-color: var(--cinzaClaro);">
+                            <img src="../images/boloLaranja1.png" class="rounded card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">Bolo de laranja</h5>
+                            </div>
+                        </div>
+                   </button>
+                    <!--
+                    <div class="col-3 m-3 p-0">
+                        <img class="w-100" src="../images/boloLaranja1.png" alt="">
+                        <button type="button" class="btn text-white mt-2" style="background-color: var(--cinza);">Bolo de laranja</button>
+                    </div> -->
+                    <div class="col-3 m-3 p-0">
+                        <img class="w-100" src="../images/boloLimao1.png" alt="">
+                        <button type="button" class="btn text-white mt-2" style="background-color: var(--cinza);">Bolo de limão</button>
+                    </div>
+                    <div class="col-3 m-3 p-0">
+                        <img class="w-100" src="../images/boloMilho1.png" alt="">
+                        <button type="button" class="btn text-white mt-2" style="background-color: var(--cinza);">Bolo de milho</button>
+                    </div>
+                <div class="container">
+                    <p>Seu dia muito mais feliz com um ou mais bolos!!</p>
+                </div>
+              </section>
+        </main>
+
+        <footer>
+          <p>Todos os direitos reservado a @Confeitaria Hora Feliz</p>
+        </footer>
+    </div>
+    
+
+    <!--MODAL BOLO DE LARANJA-->
+    <div class="modal fade" id="boloLaranjaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Bolo de limão</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex">
+                <aside class="w-50 h-100" id="lateralEsquerda" style="background-color: gray;"></aside>
+
+                <aside class="w-50 h-100" id="lateralDireita" style="background-color: green;">
+                </aside>
+            
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
+
