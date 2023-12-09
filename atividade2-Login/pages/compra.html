@@ -41,7 +41,7 @@
                       <div class="text-black card p-2" style="width: 25rem; background-color: var(--cinzaClaro);">
                           <img src="../images/boloLimao1.png" class="rounded card-img-top" alt="...">
                           <div class="card-body">
-                          <h5 class="card-title">Bolo de laranja</h5>
+                          <h5 class="card-title">Bolo de limão</h5>
                           </div>
                       </div>
                     </button>
@@ -50,7 +50,7 @@
                       <div class="text-black card p-2" style="width: 25rem; background-color: var(--cinzaClaro);">
                           <img src="../images/boloMilho1.png" class="rounded card-img-top" alt="...">
                           <div class="card-body">
-                          <h5 class="card-title">Bolo de laranja</h5>
+                          <h5 class="card-title">Bolo de milho</h5>
                           </div>
                       </div>
                     </button>
@@ -68,23 +68,32 @@
     <div class="modal fade" id="boloLaranjaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
-            <div class="modal-body mx-auto my-3 w-50 justify-content-center">
+            <div class="modal-body mx-auto w-50 justify-content-center">
                 <h2 class="text-center">Bolo de laranja</h2>
                 <img src="../images/boloLaranja1.png" class="container mx-auto my-3 row w-50 justify-content-center" alt="">
               <form action="" method="post" class="text-center container mx-auto my-3 row d-flex justify-content-center">
-                  <div class="formGroup mt-3">
-                      <label for="qtdBolo" class="d-block m-3">Informe quantos bolos você deseja</label>
-                      <input type="number" id="qtdBolo">
+                  <div class="formGroup mt-2">
+                        <p>Valor unitário</p>
+                        <label for="precoBolo" class="d-block m-3">R$ <span id="precoBolo">22,00</span></label>
                   </div>
-                  <div class="formGroup mt-3">
-                      <button type="button" id="btnCalcular" class="w-25">Confirmar compra</button>
+                  <div class="formGroup mt-2">
+                        <label for="qtdBolo" class="d-block m-3">Informe quantos bolos você deseja</label>
+                        <input type="number" id="qtdBolo">
                   </div>
-                  <div class="formGroup mt-3">
-                      <span id="resposta">Valor total da compra</span>
+                  <div class="formGroup mt-2">
+                        <button type="button" id="btnCalcular" class="w-50">Confirmar compra</button>
                   </div>
-                  <div class="formGroup mt-3">
-                    <button type="button" id="btnPagamento" class="w-25">Realizar pagamento</button>
-                </div>
+                  <div class="formGroup mt-2">
+                        <span id="resposta"></span>
+                  </div>
+                  <div class="formGroup mt-2">
+                      <button type="button" id="btnPagamento" class="w-50">Realizar pagamento</button>
+                      <div id="formaDePagamento">
+                        <h4>Dinheiro</h4>
+                        <h4>Pix</h4>
+                        <h4>Cartão</h4>
+                      </div>
+                  </div>
               </form>
             </div>
             <div class="modal-footer">
@@ -103,18 +112,22 @@
               <h2 class="text-center">Bolo de limão</h2>
               <img src="../images/boloLaranja1.png" class="container mx-auto my-3 row w-50 justify-content-center" alt="">
             <form action="" method="post" class="text-center container mx-auto my-3 row d-flex justify-content-center">
+                <div class="formGroup mt-2">
+                  <p>Valor unitário</p>
+                  <label for="precoBolo" class="d-block m-3">R$ <span id="precoBolo">22,00</span></label>
+                </div>
                 <div class="formGroup mt-3">
                     <label for="qtdBolo" class="d-block m-3">Informe quantos bolos você deseja</label>
                     <input type="number" id="qtdBolo">
                 </div>
                 <div class="formGroup mt-3">
-                    <button type="button" id="btnCalcular" class="w-25">Confirmar compra</button>
+                    <button type="button" id="btnCalcular" class="w-50">Confirmar compra</button>
                 </div>
                 <div class="formGroup mt-3">
-                    <span id="resposta">Valor total da compra</span>
+                    <span id="resposta"></span>
                 </div>
                 <div class="formGroup mt-3">
-                  <button type="button" id="btnPagamento" class="w-25">Realizar pagamento</button>
+                  <button type="button" id="btnPagamento" class="w-50">Realizar pagamento</button>
               </div>
             </form>
           </div>
@@ -134,18 +147,22 @@
               <h2 class="text-center">Bolo de milho</h2>
               <img src="../images/boloLaranja1.png" class="container mx-auto my-3 row w-50 justify-content-center" alt="">
             <form action="" method="post" class="text-center container mx-auto my-3 row d-flex justify-content-center">
+                <div class="formGroup mt-2">
+                  <p>Valor unitário</p>
+                  <label for="precoBolo" class="d-block m-3">R$ <span id="precoBolo">22,00</span></label>
+                </div>
                 <div class="formGroup mt-3">
                     <label for="qtdBolo" class="d-block m-3">Informe quantos bolos você deseja</label>
                     <input type="number" id="qtdBolo">
                 </div>
                 <div class="formGroup mt-3">
-                    <button type="button" id="btnCalcular" class="w-25">Confirmar compra</button>
+                    <button type="button" id="btnCalcular" class="w-50">Confirmar compra</button>
                 </div>
                 <div class="formGroup mt-3">
-                    <span id="resposta">Valor total da compra</span>
+                    <span id="resposta"></span>
                 </div>
                 <div class="formGroup mt-3">
-                  <button type="button" id="btnPagamento" class="w-25">Realizar pagamento</button>
+                  <button type="button" id="btnPagamento" class="w-50">Realizar pagamento</button>
               </div>
             </form>
           </div>
