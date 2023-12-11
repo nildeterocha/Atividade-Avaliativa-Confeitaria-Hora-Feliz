@@ -1,29 +1,39 @@
-var btnConfirmarCompra = $("#btnCalcular");
-var valorProduto = document.querySelector("#precoBolo");
-var totalProduto
-var quantidadeProduto =document.querySelector("#qtdBolo");
-var valorProdutoTexto = valorProduto.innerText || valorProduto.textContent;
-var valorProdutoFloat = parseFloat(valorProdutoTexto)
+var btnConfirmarCompra = document.querySelectorAll(".btnCalcular");
+var valorProduto = document.querySelectorAll(".precoBolo");
+var totalProduto = null;
+var quantidadeProduto = document.querySelectorAll(".qtdBolo");
+Number(document.querySelectorAll(".precoBolo")[0].innerHTML);
+var respostas = document.querySelectorAll(".resposta");
 
-btnConfirmarCompra.on("click", function(){
-    totalProduto = valorProdutoFloat * quantidadeProduto.value;
+btnConfirmarCompra[0].addEventListener("click", function(){
+    totalProduto = Number(quantidadeProduto[0].value) * Number(valorProduto[0].innerHTML);
     console.log(totalProduto);
     console.log();
-
-    var resposta = document.querySelector("#resposta");
-    resposta.innerText = totalProduto;
-
+    
+    respostas[0].innerText = totalProduto ;   
 });
 
-// PAREI AQUI PARA BAIXO
+btnConfirmarCompra[1].addEventListener("click", function(){
+    totalProduto = Number(quantidadeProduto[1].value) * Number(valorProduto[1].innerHTML);
+    console.log(totalProduto);
+    console.log();
+    
+    respostas[1].innerText = totalProduto ;   
+  
+});
 
-var btnRealizarPagamento = $("#btnPagamento");
+btnConfirmarCompra[2].addEventListener("click", function(){
+    totalProduto = Number(quantidadeProduto[2].value) * Number(valorProduto[2].innerHTML);
+    console.log(totalProduto);
+    console.log();
+    
+    respostas[2].innerText = totalProduto ;     
+});
 
+var btnRealizarPagamento = $(".btnPagamento");
+$(".formaDePagamento").hide();
 
 
 btnRealizarPagamento.on("click", function(){
-    alert();
-    
+    $(".formaDePagamento").slideToggle(500); 
 });
-
-
