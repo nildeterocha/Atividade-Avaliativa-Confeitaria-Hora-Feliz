@@ -37,3 +37,8 @@ $(".formaDePagamento").hide();
 btnRealizarPagamento.on("click", function(){
     $(".formaDePagamento").slideToggle(500); 
 });
+
+var btnEscolherPagamento = $(".btnTipoPagamento");
+btnEscolherPagamento.on("click", function(){
+    alert("Pagamento realizado com sucesso!");
+})

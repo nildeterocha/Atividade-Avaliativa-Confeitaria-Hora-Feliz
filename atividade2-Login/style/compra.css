@@ -15,3 +15,6 @@
     --preto: rgb(10, 9, 9);
 
 }
+.modal-content{
+    background-color: var(--cinzaMaisClaro);
+}
